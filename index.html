@@ -5,24 +5,161 @@
 	<link href="index.css" rel="stylesheet" type="text/css" media="screen" />
 </head>
     <body>
-      <ul>
-        <li><a href="#home">Acceuil</a></li>
-        <li><a href="#Formations">Formations</a></li>
-        <li><a href="#Compétences">Compétences</a></li>
-        <li><a href="#Expériences">Expériences</a></li>
-        <li><a href="#contact">Me contacter</a></li>
-        <li><p align="center"><input type="search" name="recherche" id="recherche" placeholder="rechercher">
-          <input type="submit" value="ok"></p></li>
-      </ul> 
+      <div id="Acceuil">
+        <ul>
+          <li><a href="#Acceuil">Acceuil</a></li>
+          <li><a href="#Formations">Formations</a></li>
+          <li><a href="#Competences">Compétences</a>
+            <ul class="sous_menu">
+              <li><a href="#Informatique">Info</a></li>
+              <li><a href="#Electronique">Elec</a></li>
+              <li><a href="#Gestion d'équipe">Gestion</a></li>
+            </ul>
+          </li>
+          <li><a href="#Experiences">Expériences</a></li>
+          <li><a href="#contact">Me contacter</a></li>
+          <li><p align="center"><input type="search" name="recherche" id="recherche" placeholder="rechercher">
+            <input type="submit" value="ok"></p></li>
+        </ul>
+      </div> 
+      
       <div class="entete">
         <p><img src="ma_photo.jpg"></p>
         <div class="presentation">
           <h1>Gabriel Gatto</h1>
-          <h3>Developeur Informatique</h3>
-          <p>Fort d'une expérience de 20 ans dans divers secteurs d'activités, 
+          <h2>Developeur Informatique</h2>
+          <p class="accroche">Fort d'une expérience de 20 ans dans divers secteurs d'activités, 
 dont l'électronique, je me suis lancé depuis 2 ans dans un projet de reconvertion en informatique</p>
         </div>
       </div>
+      <div class="fin_de_page">
+        <p><a href="#Formations"><img src="fleche.png" style="width: 250px; height: 250px;" alt="fleche_bas"></a></p>
+      </div>
+      <div id="Formations"></div>
+      <h3>Mes formations</h3>
+      <div class="Formations">
+        <span class="form">
+          <h6>Septembre 2019 à Septembre 2020:</h6>
+          <p>DUT Informatique obtenu à l'IUT<br> de Gradignan Bordeaux</p>
+        </span>
+        <span class="form">
+          <h6>Septembre 2017 à Juin 2018:</h6>
+          <p>DAEUB (équivalent BAC S)obtenu en cours<br> à distance à la FAC de Bordeaux 3</p>
+        </span>
+        <span class="form">
+          <h6>1999 à Juin 2001:</h6>
+          <p>CAP Ebéniterie obtenu chez les<br> Compagnons du Devoir à Bordeaux</p>
+        </span>
+      </div>
+      <div id="Competences"></div> 
+      <h3>Mes Compétences</h3>
+      <div class="Competences">
+        <h4 id="Informatique">Informatique</h4>
+        <span class="comp">
+          <h5>Environnement Informatique</h5>
+          <p>Linux, Android, Windows</p>
+          <p>Réalisation de script en language BASH.</p>
+        </span>
+        <span class="comp">
+          <h5>Environnements de développement intégrés</h5>
+          <p>Eclipse, Visual Studio</p>
+        </span>
+        <span class="comp">
+          <h5>Programmation objet: Java, c#</h5>
+          <p>Réalistion de projets sous forme de mini jeux interactifs seul ou en binôme.<br> Création d'interfaces Homme/machine.</p>
+        </span>
+        <span class="comp">
+            <h5>Base de Données: SQL</h5>
+            <p>Ordonnancement, interrogation, actualisation et implémentation de bases de données.
+  <br>Requettage simple, fonctions d'agrégation, sous requettes, jointures internes et externes.</p>
+        </span>
+        <span class="comp">
+          <h5>Programmation web: HTML, CSS</h5>
+          <p>Réalisation de pages web responsives avec menus, liens actifs, mentions légales et animations de contenus.</p>
+        </span>
+        <h4 id="Electronique">Electronique</h4>
+        <span class="elec">
+        <p>Montage et maintenance d'appareils électroniques dédiés aux diagnostiques capillaire et cutanés.</p>
+        </span>
+        <h4 id="Gestion d'équipe">Gestion d'Equipe</h4>
+        <span class="gest">
+          <p>Répartition et organisation du travail d'une équipe de 3 à 5 personnes.</p>
+        </span>
+      </div>
+      <div id="Experiences"></div>
+      <div class="Experiences">
+        <h3>Mes Expériences</h3>
+        <span class="expe">
+          <h6>De Juin 2015 à Novembre 2018:</h6>
+          <h5>Technicien SAV Polyvalent</h5>
+          <p>Maintenance matérielle et logicielle d'appareils électroniques.<br>
+        Installation, paramétrage de systèmes d'exploitations<br> et d'applications dédiées aux diagnostics capillaires.
+          </p>
+        </span>
+        <span class="expe">
+          <h6>De Mai 2005 à Juin 2015</h6>
+          <h5>Employé Logistique / Conducteur Routier</h5>
+          <p>Employé d'exploitation logistique,<br> gestionnaire de flux de marchandises<br>
+             et coordination d'une équipe de conducteurs.
+          </p>
+        </span>
+        <span class="expe">
+          <h6>De Juillet 2002 à Mai 2005</h6>
+          <h5>Préparateur de commande/Manutentionnaire</h5>
+        </span>
+        <span class="expe">
+          <h6>De Juillet 2001 à Juillet 2002</h6>
+          <h5>Menuisier</h5>
+        </span>
+        <span class="expe">
+          <h6>De Septembre 1998 à Juin 2001</h6>
+          <h5>Apprenti Ebéniste</h5>
+        </span>
+      </div>
+      <div id="contact"></div>
+      <div class="Contact" >
+        <h3>Pour me contacter ou simplement laisser un commentaire.</h3>
+        <h5>Vous souhaitez me contacter pour:</h5>
+        <form>
+          <div class="check">
+            <span class="motif">
+              <p>Un Contrat Pro</p>
+              <input type="checkbox" name="contratpro" id="contratpro">
+            </span>
+            <span class="motif">
+              <p>Une Embauche</p>
+              <input type="checkbox" name="embauche" id="embauche">
+            </span>
+            <span class="motif">
+              <p>Donner votre avis</p>
+              <input type="checkbox" name="avis" id="avis">
+            </span>
+          </div>
+          <div class="champs">
+            <span>
+              <p>Votre Nom</p>
+              <input type="text" name="name" id="name" placeholder="Nom" style="width: 350px; height: 45px;" required>
+            </span>
+            <span>
+              <p>Votre Prénom</p>
+              <input type="text" name="firstname" id="firstname" placeholder="Prénom" style="width: 350px; height: 45px;"  required >
+            </span>
+            
+            <span>
+              <p>Votre adresse mail</p>
+              <input type="email" name="email" id="email" placeholder="email" style="width: 450px; height: 45px;"  required>
+            </span>
+            <span>
+                <p>Vos commentaires</p>
+                <input type="text" name="comment" id="comment" style="width: 750px; height: 250px;">
+            </span>
+            <span>
+              <input type="submit" value="Envoyer" style="width: 150px; height: 45px;">
+            </span>
+          </div>
+        </form>
+      </div>
+        
 
     </body>
 </html>
