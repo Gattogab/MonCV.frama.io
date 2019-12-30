@@ -1,120 +1,142 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-	<title>GattoGab.CV</title>
-	<link href="index.css" rel="stylesheet" type="text/css" media="screen" />
+  <meta charset="UTF-8">              
+  <title>CV_Developpeur_Informatique_Gatto_Gabriel_GattoGab_AS_2020</title>
+	<link href="index.css" rel="stylesheet" type="text/css"/>
 </head>
     <body>
       <div id="Acceuil">
         <ul>
-          <li><a href="#Acceuil">Acceuil</a></li>
-          <li><a href="#Formations">Formations</a></li>
-          <li><a href="#Competences">Compétences</a>
+          <li><a href="#Acceuil" data-tooltip="Acceuil">Acceuil</a></li>
+          <li><a href="#Formations" data-tooltip="Mes Formations">Formations</a></li>
+          <li><a href="#Competences" data-tooltip="Mes compétences">Compétences</a>
             <ul class="sous_menu">
               <li><a href="#Informatique">Info</a></li>
               <li><a href="#Electronique">Elec</a></li>
-              <li><a href="#Gestion d'équipe">Gestion</a></li>
+              <li><a href="#Gestion_d_equipe">Gestion</a></li>
             </ul>
           </li>
-          <li><a href="#Experiences">Expériences</a></li>
-          <li><a href="#contact">Me contacter</a></li>
-          <li><p align="center"><input type="search" name="recherche" id="recherche" placeholder="rechercher">
-            <input type="submit" value="ok"></p></li>
+          <li><a href="#Experiences" data-tooltip="Mes Expériences">Expériences</a></li>
+          <li><a href="#contact" data-tooltip="Ecrivez moi">Me contacter</a></li>
+
         </ul>
       </div> 
       
       <div class="entete">
-        <p><img src="ma_photo.jpg"></p>
+        <p><img src="ma_photo.jpg" alt="ma_photo"></p>
         <div class="presentation">
           <h1>Gabriel Gatto</h1>
-          <h2>Developeur Informatique</h2>
+          <h2>Developpeur Informatique</h2>
           <p class="accroche">Fort d'une expérience de 20 ans dans divers secteurs d'activités, 
-dont l'électronique, je me suis lancé depuis 2 ans dans un projet de reconvertion en informatique</p>
+dont l'électronique, je suis lancé dans un projet de reconvertion en informatique.
+Je suis actuellement la formation en Année Spéciale au DUT Informatique à l'IUT de Gradignan et suis 
+à la recherche d'un contrat pro afin de continuer ma formation en license professionnelle. </p>
         </div>
       </div>
       <div class="fin_de_page">
-        <p><a href="#Formations"><img src="fleche.png" style="width: 250px; height: 250px;" alt="fleche_bas"></a></p>
+        <div class="finpage">
+          <h4>Qui suis-je?</h4>
+          <p>Nom: Gatto<p>
+          <p>Prenom: Gabriel</p>
+          <p>Age: 37 ans</p>
+          <p>Domicile: Cadillac 33410</p>
+          <p>Véhicule personnel:  oui</p>
+        </div>
+        <div class="finpage1">
+          <p>
+            <a href="#Formations"><img src="fleche.png" style="width: 220px; height: 220px;" alt="page suivante"></a>
+          </p>
+        </div>
+        <div class="finpage2">
+          <h4>Mes Atouts</h4>
+          <p>Curieux</p>
+          <p>Polyvalent</p>
+          <p>Motivé</p>
+          <p>Appliqué</p>
+          <p>Niveau Anglais: Courant</p>
+        </div>
       </div>
       <div id="Formations"></div>
       <h3>Mes formations</h3>
       <div class="Formations">
-        <span class="form">
+        <div class="form">
           <h6>Septembre 2019 à Septembre 2020:</h6>
           <p>DUT Informatique obtenu à l'IUT<br> de Gradignan Bordeaux</p>
-        </span>
-        <span class="form">
+        </div>
+        <div class="form">
           <h6>Septembre 2017 à Juin 2018:</h6>
           <p>DAEUB (équivalent BAC S)obtenu en cours<br> à distance à la FAC de Bordeaux 3</p>
-        </span>
-        <span class="form">
+        </div>
+        <div class="form">
           <h6>1999 à Juin 2001:</h6>
           <p>CAP Ebéniterie obtenu chez les<br> Compagnons du Devoir à Bordeaux</p>
-        </span>
+        </div>
       </div>
       <div id="Competences"></div> 
       <h3>Mes Compétences</h3>
       <div class="Competences">
         <h4 id="Informatique">Informatique</h4>
-        <span class="comp">
+        <div class="comp">
           <h5>Environnement Informatique</h5>
           <p>Linux, Android, Windows</p>
           <p>Réalisation de script en language BASH.</p>
-        </span>
-        <span class="comp">
+        </div>
+        <div class="comp">
           <h5>Environnements de développement intégrés</h5>
           <p>Eclipse, Visual Studio</p>
-        </span>
-        <span class="comp">
+        </div>
+        <div class="comp">
           <h5>Programmation objet: Java, c#</h5>
           <p>Réalistion de projets sous forme de mini jeux interactifs seul ou en binôme.<br> Création d'interfaces Homme/machine.</p>
-        </span>
-        <span class="comp">
+        </div>
+        <div class="comp">
             <h5>Base de Données: SQL</h5>
             <p>Ordonnancement, interrogation, actualisation et implémentation de bases de données.
   <br>Requettage simple, fonctions d'agrégation, sous requettes, jointures internes et externes.</p>
-        </span>
-        <span class="comp">
+        </div>
+        <div class="comp">
           <h5>Programmation web: HTML, CSS</h5>
           <p>Réalisation de pages web responsives avec menus, liens actifs, mentions légales et animations de contenus.</p>
-        </span>
+        </div>
         <h4 id="Electronique">Electronique</h4>
-        <span class="elec">
+        <div class="elec">
         <p>Montage et maintenance d'appareils électroniques dédiés aux diagnostiques capillaire et cutanés.</p>
-        </span>
-        <h4 id="Gestion d'équipe">Gestion d'Equipe</h4>
-        <span class="gest">
+        </div>
+        <h4 id="Gestion_d_equipe">Gestion d'Equipe</h4>
+        <div class="gest">
           <p>Répartition et organisation du travail d'une équipe de 3 à 5 personnes.</p>
-        </span>
+        </div>
       </div>
       <div id="Experiences"></div>
       <div class="Experiences">
         <h3>Mes Expériences</h3>
-        <span class="expe">
+        <div class="expe">
           <h6>De Juin 2015 à Novembre 2018:</h6>
           <h5>Technicien SAV Polyvalent</h5>
           <p>Maintenance matérielle et logicielle d'appareils électroniques.<br>
         Installation, paramétrage de systèmes d'exploitations<br> et d'applications dédiées aux diagnostics capillaires.
           </p>
-        </span>
-        <span class="expe">
+        </div>
+        <div class="expe">
           <h6>De Mai 2005 à Juin 2015</h6>
           <h5>Employé Logistique / Conducteur Routier</h5>
           <p>Employé d'exploitation logistique,<br> gestionnaire de flux de marchandises<br>
              et coordination d'une équipe de conducteurs.
           </p>
-        </span>
-        <span class="expe">
+        </div>
+        <div class="expe">
           <h6>De Juillet 2002 à Mai 2005</h6>
           <h5>Préparateur de commande/Manutentionnaire</h5>
-        </span>
-        <span class="expe">
+        </div>
+        <div class="expe">
           <h6>De Juillet 2001 à Juillet 2002</h6>
           <h5>Menuisier</h5>
-        </span>
-        <span class="expe">
+        </div>
+        <div class="expe">
           <h6>De Septembre 1998 à Juin 2001</h6>
           <h5>Apprenti Ebéniste</h5>
-        </span>
+        </div>
       </div>
       <div id="contact"></div>
       <div class="Contact" >
@@ -122,44 +144,53 @@ dont l'électronique, je me suis lancé depuis 2 ans dans un projet de reconvert
         <h5>Vous souhaitez me contacter pour:</h5>
         <form>
           <div class="check">
-            <span class="motif">
+            <div class="motif">
               <p>Un Contrat Pro</p>
-              <input type="checkbox" name="contratpro" id="contratpro">
-            </span>
-            <span class="motif">
+              <label><input type="checkbox" name="contratpro" id="contratpro"></label>
+            </div>
+            <div class="motif">
               <p>Une Embauche</p>
-              <input type="checkbox" name="embauche" id="embauche">
-            </span>
-            <span class="motif">
+              <label><input type="checkbox" name="embauche" id="embauche"></label>
+            </div>
+            <div class="motif">
               <p>Donner votre avis</p>
-              <input type="checkbox" name="avis" id="avis">
-            </span>
+              <label><input type="checkbox" name="avis" id="avis"></label>
+            </div>
           </div>
           <div class="champs">
-            <span>
+            <div>
               <p>Votre Nom</p>
-              <input type="text" name="name" id="name" placeholder="Nom" style="width: 350px; height: 45px;" required>
-            </span>
-            <span>
+              <label><input type="text" name="name" id="name" placeholder="Nom" style="width: 350px; height: 45px;" required></label>
+            </div>
+            <div>
               <p>Votre Prénom</p>
-              <input type="text" name="firstname" id="firstname" placeholder="Prénom" style="width: 350px; height: 45px;"  required >
-            </span>
-            
-            <span>
-              <p>Votre adresse mail</p>
-              <input type="email" name="email" id="email" placeholder="email" style="width: 450px; height: 45px;"  required>
-            </span>
-            <span>
-                <p>Vos commentaires</p>
-                <input type="text" name="comment" id="comment" style="width: 750px; height: 250px;">
-            </span>
-            <span>
-              <input type="submit" value="Envoyer" style="width: 150px; height: 45px;">
-            </span>
+              <label><input type="text" name="firstname" id="firstname" placeholder="Prénom" style="width: 350px; height: 45px;"  required ></label>
+            </div>
+            <div>
+                <p>Le Nom De Votre Entreprise</p>
+                <label><input type="text" name="entreprise" id="entreprise" style="width: 350px; height: 45px;"></label>
+              </div>
+            <div>
+              <p>Votre Adresse Mail</p>
+              <label><input type="email" name="email" id="email" placeholder="email" style="width: 450px; height: 45px;"  required></label>
+            </div>
+            <div>
+              <p>Vos Commentaires</p>
+              <label><textarea id="comment" name="comment"
+                rows="10" cols="60">
+                </textarea>
+              </label>
+            </div>
+            <div>
+              <label><input type="submit" value="Envoyer" style="width: 180px; height: 60px; color: rgb(243, 229, 103); background-color: rgb(66, 172, 45); margin-top: 10px;"></label>
+            </div>
           </div>
         </form>
       </div>
-        
-
+      <footer>
+        <p class="footer">Mentions légales</p>
+        <p class="footer">Version Papier</p>
+        <p class="footer">IN @Gabriel Gatto</p>
+      </footer>
     </body>
 </html>

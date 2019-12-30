@@ -3,16 +3,17 @@ body{
     background-color: powderblue;
 }
     /*  mise en forme en tête de page   */
-    [class="entete"]{
+    .entete{
         width: 100%;
         height: 450px;
         display: flex;
         justify-content: space-around;
         align-items: center;
         background-color: rgb(159, 204, 247);
-        margin-top: 100px;
+        margin-top: 15px;
     }
-    [class="presentation"]{
+ 
+    .presentation{
         width: 70%;
     }
     h1{
@@ -37,13 +38,17 @@ body{
     ul {
         position: fixed;
         top: 0;
-        width: 100%;
+        width: 99%;
+        height: 90px;
         display: flex;
         justify-content: space-around;
+        align-items: center;
         list-style-type: none;
         overflow: hidden;
         border: 2px solid rgb(248, 136, 44);
         background-color: whitesmoke;
+        padding-left: 0px;
+        
     }
     .sous_menu{
         visibility: hidden;
@@ -54,48 +59,40 @@ body{
     }
 
     li a {
-        display: block;
         color: rgb(248, 136, 44);
         text-align: center;
-        font-size: 25px;
+        font-size: 28px;
         padding: 14px 16px;
         text-decoration: none;
-        margin-top: 12px;
     }
-    li a:hover {
-        background-color: rgb(206, 233, 86);
+ 
+    li a:hover:after {
+        background-color: cornsilk;
+        content: attr(data-tooltip);
+        position: relative;
+        top: 25px;
+        left: -95px;
+        font-size: 18px;
+        padding: 3px;
+        border: 1px solid  rgb(248, 136, 44);
+        color: royalblue;
+        border-radius: 10px;
     }
       
-    /*    Mise en forme barre de recherche + bouton */
-      [type="submit"]:hover{
-        background-color: #e8e8e7;
-        cursor: grab;
-    }
-      
-    [type="submit"]{
-          width: 60px;
-          height: 35px;
-          border: 0px;
-          margin-top: 3px;
-          margin-left: 30px;
-    }
-    [type="search"]{
-          width: 240px;
-          height: 35px;
-    }
-    
     .fin_de_page{
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
         width: 100%;
         height: 350px;
+        text-align: center;
     }
 
     h3{
         text-align: center;
         font-size: 35px;
         color: rgb(248, 136, 44);
+        margin-top: 15px;
     }
     
     h4{
@@ -103,6 +100,8 @@ body{
         font-size: 32px;
         text-decoration: underline;
         color: royalblue;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
     
     h5{
@@ -122,47 +121,75 @@ body{
     }
 
     p{
-        font-size: 22px;
+        font-size: 24px;
         margin-bottom: 5px;
         margin-top: 15px;
     }
 
     .Formations{
         display: flex;
-        flex-direction: row;
         justify-content: space-around;
         text-align: center;
     }
+    
     .form:hover{
         transform: scale(1.3);  
         background-color: skyblue;
     }
+    
     .Competences,.Experiences{
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
+    /* Gestion de toutes les div intermédiaires*/
+    .finpage2,.finpage,.expe,.elec,.gest,.comp,.form{
+        margin-top:10px;
+        padding: 12px;
+        border: 3px solid rgb(248, 136, 44);
+        transition : all 0.5s ease-in;
+     }
     .expe:hover,.elec:hover,.gest:hover,.comp:hover{
         transform: scale(1.5);
         background-color: cornsilk;
     }
-
-    .expe,.elec,.gest,.comp,.form{
-       margin-top:10px;
-        padding: 12px;
-        border: 3px solid rgb(248, 136, 44);
+    /* Gestion animations page d'acceuil*/
+    .finpage:hover{
+        background-color: cornsilk;
+        transform: translate(190px, -150px) scale(1.7) rotate(360deg);
     }
-    .form{
-        display: flex;
-        flex-direction: column;
+    .finpage2:hover{
+        background-color: cornsilk;
+        transform: translate(-190px, -150px) scale(1.7) rotate(-360deg);
     }
+    .finpage1:hover:after{
+        content: "page suivante";
+        background-color: cornsilk;
+        padding: 5px;
+        position: relative;
+        border: 1px solid  rgb(248, 136, 44);
+        color: royalblue;
+        border-radius: 10px; 
+        transform: scale(1.3);
+        
+    }
+    
+    /* gestion du formulaire*/
     input{
         margin-bottom: 25px;
+        font-size: 25px;
     }
-    .check{
+    input:valid{
+        color: green;
+        border: 2px solid green;
+    }
+
+    textarea{
+        font-size: 25px;
+    }
+    .check,footer{
         display: flex;
-        flex-direction: row;
         justify-content: space-around;
     }
     .motif{
@@ -179,6 +206,16 @@ body{
         margin-left: 15px;
         transform: scale(1.3);
     }
+    footer{
+        align-items: center;
+        height: 70px;
+        border: 2px solid rgb(248, 136, 44);
+        background-color: whitesmoke;
+        color: rgb(248, 136, 44);
+    }
+    .footer{
+        margin-bottom: 18px;
+    }
     [id="contact"],[id="Formations"],[id="Competences"],[id="Acceuil"],[id="Experiences"]{
         height: 80px;
     }
@@ -192,7 +229,6 @@ body{
         }
         [class="entete"]{
             width: 100%;
-            height: 250px;
             display: flex;
             justify-content: space-around;
             align-items: center;
@@ -204,47 +240,6 @@ body{
         h2{
             font-size: 30px; 
         }
-        [class="presentation"]{
-            width: 70%;
-            font-size: 18px;
-        }
-        [src="ma_photo.jpg"]{
-            border-radius :50%;
-            border:2px solid white;
-            width: 90px;
-            height: 110px;
-        }
-        ul {
-           list-style-type: none;
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            background-color: #f1f1f1;
-          }
-          
-          li a {
-            text-align: center;
-            display: block;
-            color: rgb(149, 214, 45);
-            padding: 8px 16px;
-            text-decoration: none;
-          }
-          li a:hover{
-              background-color: aquamarine;
-          }
-          [type="submit"]{
-            width: 60px;
-            height: 35px;
-            border: 0px;
-            margin-top: 6px;
-            margin-left: 30px;
-        }
-        [type="search"]{
-            margin-left: auto;
-            width: 240px;
-            height: 35px;
-        }
-
         h3{
             text-align: center;
             font-size: 28px;
@@ -256,12 +251,16 @@ body{
             font-size: 25px;
             text-decoration: underline;
             color: royalblue;
+            margin-bottom: 10px;
+            margin-top: 10px;
         }
         
         h5{
             color:rgb(248, 136, 44);
             text-align: center;
-            font-size: 23px; 
+            font-size: 23px;
+            margin-bottom: 10px;
+            margin-top: 10px; 
         }
     
         h6{
@@ -271,6 +270,40 @@ body{
             margin-top: 15px;
             margin-bottom: 10px;
         }
+        [class="presentation"]{
+            width: 70%;
+            font-size: 18px;
+        }
+        [src="ma_photo.jpg"]{
+            border-radius :50%;
+            border:2px solid white;
+            width: 90px;
+            height: 110px;
+        }
+        .finpage1{
+            visibility: hidden;
+            height: 10px;
+        }
+        ul {
+           list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            background-color: #f1f1f1;
+        }
+          
+        li a {
+            text-align: center;
+            display: block;
+            color: rgb(149, 214, 45);
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+        
+        li a:hover{
+              background-color: aquamarine;
+        }
+        
         p{
             font-size: 16px;
         }
@@ -287,21 +320,23 @@ body{
             background-color: skyblue;
         }
 
-        .Competences,.Experiences{
+        .Competences,.Experiences,.fin_de_page{
             display: flex;
             flex-direction: column;
             align-items: center;
             text-align: center;
         }
-        .expe:hover,.elec:hover,.gest:hover,.comp:hover{
+        /* gestion des div intermédiaires*/
+        .finpage2:hover,.finpage:hover,.expe:hover,.elec:hover,.gest:hover,.comp:hover{
             transform: scale(1.2);
             background-color: cornsilk;
         }
     
-        .expe,.elec,.gest,.comp,.form{
+        .finpage2,.finpage,.expe,.elec,.gest,.comp,.form{
             padding: 12px;
             border: 3px solid rgb(248, 136, 44);
         }
+        /*  Mise en page du formulaire*/
         .check{
             display: flex;
             flex-direction: row;
@@ -319,8 +354,26 @@ body{
         .champs p{
             text-align: center;
         }
-
+        input{
+            font-size: 20px;
+        }
+        input:valid{
+            color: green;
+            border: 2px solid green;
+        }
+        textarea{
+            font-size: 15px;
+        }
         
-        
+        footer{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 70px;
+            border: 2px solid rgb(248, 136, 44);
+            background-color: whitesmoke;
+            color: rgb(248, 136, 44);
+            margin-top: 10px;
+        }
 }
     
