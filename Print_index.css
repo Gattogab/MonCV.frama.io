@@ -1,0 +1,107 @@
+.entete{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: gainsboro;
+}
+
+.presentation{
+    width: 70%;
+}
+h1{
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: blue;
+}
+h2{
+    font-size: 26px;
+}
+.accroche{
+    font-size: 20px;
+}
+
+/*  retaillage photo    */
+[src="ma_photo.jpg"]{
+    border-radius :50%;
+    border:2px solid white;
+    width: 150px;
+    height: 180px;
+}
+/*  mise enforme menu fixe  */
+ul,.sous_menu,.finpage1,.Contact,footer {
+visibility: collapse; 
+}
+
+.fin_de_page{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+    font-size: 28px;
+    color: blueviolet;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h4{
+    text-align: center;
+    font-size: 26px;
+    text-decoration: underline;
+    color: grey;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+h5{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color:grey;
+    text-align: center;
+    font-size: 22px; 
+    text-decoration: underline;
+}
+
+h6{
+    color:grey;
+    font-size: 20px;
+    text-decoration: underline;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+p{
+    font-size: 18px;
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+
+.Formations{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.Competences,.Experiences{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+/* Gestion de toutes les div intermédiaires*/
+.finpage2,.finpage,.form{
+
+    border: 3px solid grey;
+ }
+
+ #Competences{
+height: 430px;
+ }
+ 
