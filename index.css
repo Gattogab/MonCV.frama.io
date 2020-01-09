@@ -8,7 +8,7 @@
 
 @media screen and (min-width: 1000px){
 body{
-    background-color:  rgb(159, 245, 248);
+    background-color: lightcyan;
 }
     /*  mise en forme en tête de page   */
     .entete{
@@ -17,7 +17,7 @@ body{
         display: flex;
         justify-content: space-around;
         align-items: center;
-        background-color: rgb(162, 213, 247);
+        background-color: lightskyblue;
         margin-top: 15px;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
@@ -37,7 +37,7 @@ body{
     }
     
     /*  retaillage photo    */
-    [src="ma_photo.jpg"]{
+    [src="ma_photo2.jpg"]{
         border-radius :50%;
         border:2px solid white;
         width: 300px;
@@ -210,6 +210,7 @@ body{
         align-items: center;
         margin-top: 25px;
     }
+
     [type="checkbox"]{
         margin-top: 20px;
         margin-left: 15px;
@@ -243,9 +244,10 @@ body{
         body{
             background-color: rgb(159, 245, 248);
         }
-        [class="entete"]{
+        .entete{
             width: 100%;
             display: flex;
+            flex-direction: column;
             justify-content: space-around;
             align-items: center;
             background-color: rgb(162, 213, 247);
@@ -296,11 +298,14 @@ body{
             width: 70%;
             font-size: 18px;
         }
-        [src="ma_photo.jpg"]{
+        [src="ma_photo2.jpg"]{
             border-radius :50%;
             border:2px solid white;
-            width: 90px;
-            height: 110px;
+            width: 150px;
+            height: 170px;
+        }
+        .accroche{
+            font-size: 28px;
         }
         .finpage1{
             visibility: hidden;
